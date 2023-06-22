@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <script src="js/script.js"></script>
+  <style>
+    body, h1, h2, h3, p, ul, li, form, input, textarea {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  header{
+    background-color: rgba(0, 0, 0, 0.744);
+    color: rgb(255, 247, 0);
+    padding: 20px;
+    
+}
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Main styles */
+  main {
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    margin-left: 360px;
+    margin-right: 360px;
+    justify-content: center;
+  }
+  
+  .column {
+    width: 50%;
+    padding: 0 10px;
+  }
+  
+  .column:nth-child(1) {
+    width: 40%;
+    margin-right: 40px;
+  }
+  
+  .column:nth-child(2) {
+    width: 60%;
+  }
+  
+  form {
+    margin-top: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  .map {
+    margin-left: 360px;
+    margin-right: 360px;
+    padding-top: 40px;
+  }
+
+  /* Footer styles */
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>HELEMAN</h1>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="column">
+        <h2>Information Contact</h2>
+        <p>Address: 123 Street, City</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: example@example.com</p>
+      </div>
+      <div class="column">
+        <h2>Send Message</h2>
+        <form>
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required><br>
+  
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required><br>
+  
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea><br>
+  
+          <input type="submit" value="Send">
+        </form>
+      </div>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6519627.349911456!2d-110.94252676996321!3d37.03757454366922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2zQ2FsaWZvcm5pYSwgSG9hIEvhu7M!5e0!3m2!1svi!2s!4v1687406776982!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  </main>
+  
+
+  <footer>
+    <p>&copy; 2023 Your Website</p>
+  </footer>
+</body>
+</html>
